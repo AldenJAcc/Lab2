@@ -9,7 +9,7 @@ phases:
   build:
     commands:
       - echo Building the Docker image...
-      - docker build -t alden_pipelinebuild:latest .
+      - docker build -t alden_pipelinebuild .
       - docker tag alden_pipelinebuild:latest 864899837235.dkr.ecr.ap-south-1.amazonaws.com/alden/myrepo:latest
 
   post_build:
